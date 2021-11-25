@@ -1,0 +1,39 @@
+<title>LIVROS</title>
+<head>
+
+    <style>
+        body {background-color:#FCE5E2 ;
+              color: #7A453D;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;}
+
+        h1{ color: #B36559;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;}
+
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <b><h1 >TABELA DE LIVROS</h1></b>
+
+    <table border="3" align="center">
+        <tr>
+            
+            <td> <b>Nome:</b> </td> 
+            <td> <b>Autor:</b></td>
+        </tr>
+        <% for (var i = 0; i < dados.length; i++) { %>
+        <tr>
+            <td><%= dados[i].nome %></td>
+            <td> <%= dados[i].autor %></td>
+        </tr>
+        <% } %>
+    </table>
+      
+</body>
